@@ -1,0 +1,192 @@
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    background: #000020;
+    text-align: center;
+    color: #eee;
+    font-family: 'arial', Ubuntu, 'sans-serif';
+}
+
+#wrapper
+{
+    position: relative;
+    margin: auto;
+    text-align: left;
+}
+
+#logo
+{
+    width: 150px;
+    float: left;
+    margin-left: 10px;
+    margin-top: -35px;
+}
+
+.cleaner
+{
+    clear: both;
+}
+
+#menu
+{
+    min-height: 50px;
+    border-top:1px solid #aaa;
+    border-bottom:1px solid #aaa;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    text-align: center;
+}
+
+#menu a, #menu a:visited
+{
+    line-height: 50px;
+    color: #aaa;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+}
+
+#menu a:hover, #menu a:visited:hover, #menu a.active
+{
+    color: #fff;
+}
+
+h1
+{
+    margin: 0;
+    font-size: 1.8em;
+    border-bottom: 1px solid #333;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    display: block;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+h2
+{
+    font-size: 1.3em;
+}
+
+h4
+{
+    line-height: 0.5em;
+}
+
+p
+{
+    line-height: 1.3em;
+    font-size:1em;
+}
+
+.fold, .newsfold
+{
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+    width: auto;
+    vertical-align: top;
+    text-align:left;
+    display: block;
+}
+
+.newsfold
+{
+	width: auto;
+    display: inline-block;
+}
+
+a, a:visited
+{
+    color: #77f;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+ul
+{
+    margin: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+ul li
+{
+    line-height: 1.5em;
+}
+
+hr
+{
+    border: 0;
+    border-top: 1px dashed #555;
+    height: 0;
+}
+
+code
+{
+    font-size: 1em;
+    border:1px solid #aaa;
+    padding: 0.2em;
+    background: #333;
+    color: #fff;
+}
+
+.update
+{
+    display: block;
+    padding-bottom: 0.5em;
+    color: #ddd;
+}
+
+.commit-sha
+{
+    padding-right: 0.3em;
+    color: #aaa;
+    font-family: monospace;
+}
+
+#footer
+{
+    color: #aaa;
+    font-size: 11px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 900px)
+{
+    #menu
+    {
+        padding-right: 150px; /* center back -- left by logo width */
+    }
+}
+
+@media screen and (min-width: 400px)
+{
+	.fold, .newsfold
+	{
+		border: 1px solid #aaa;
+		padding: 1em;
+		margin: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		display: block;
+	}
+	
+	.newsfold
+	{
+		width: 27%;
+		display: inline-block;
+	}
+}

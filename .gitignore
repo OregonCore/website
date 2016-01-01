@@ -1,0 +1,6 @@
+
+*~
+*/config/secrets.php
+*/config/database.php
+application/cache/*
+application/logs/*
